@@ -282,7 +282,7 @@ header nav ul li a {
     display: inline-block;
     vertical-align: top;
     text-align: left;
-    margin: 30px 0 0 60px;
+    margin: 30px 0 0 15px;
     color: white;
 }
 
@@ -304,13 +304,13 @@ header nav ul li a {
     padding: 7px 15px;
     font-size: 16px;
     color: #024e76;
-    width: 100%;
+    width: 95%;
     margin-bottom: 15px;
     margin-top: 5px;
 }
 
 .contact-form button {
-    width: 100%;
+    width: 95%;
     border: none;
     background: #fce138;
     color: #024e76;
@@ -352,8 +352,115 @@ section {
     padding: 60px;
 }
 
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+/* MEDIA QUERY FOR 980PX SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
-    
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero-cta, .hero-form {
+        width: 100%;
+    }
+
+    .hero-cta {
+        text-align: center;
+    }
+
+    .section-title {
+        width: 80%;
+    }
+
+    .trainer {
+        flex: 0 70%;
+    }
+
+    .contact-info {
+        justify-content: center;
+    }
+
+    .contact-info iframe{
+        flex: 1 100%;
+    }
+}
+
+/* MEDIA QUERY FOR 768PX SCREENS AND SMALLER */
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+
+  .step h3 {
+      flex: 1 100%;
+      text-align: center;
+  }
+
+  .step-info {
+      flex: 2 100%;
+      text-align: center;
+      justify-content: center;
+  }
+
+  .step-img {
+      flex: 0 32%;
+      margin-right: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+  }
+
+  .step-text {
+      flex: 100%;
+  }
+}
+
+/* MEDIA QUERY FOR 575PX SCREENS AND SMALLER */
+@media screen and (max-width: 768px) {
+  .hero-form button {
+      width: 100%;
+  }
+
+  .section-title {
+      width: 95%;
+  }
+
+  .intro p {
+      width: 100%;
+  }
+
+  .trainer {
+      flex: 0 100%;
+  }
+
+  .contact-info {
+      text-align: center;
+  }
+
+  .contact-info > * {
+      flex: 0 100%;
+  }
+
+  .contact-form {
+      order: 3;
+  }
 }
   
