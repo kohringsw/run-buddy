@@ -252,6 +252,20 @@ header nav ul li a {
 }
 /* Your Trainers End*/
 
+/* Service Plans Start */
+.service-grid-container {
+    display: grid;
+}
+
+.service-grid-item {
+    width: 200px;
+    height: 50px;
+    background-color: orange;
+    border: solid;
+    color: black;
+}
+/* Service Plans End */
+
 /* Reach Out Start*/
 .contact {
     background: #024e76;
@@ -434,7 +448,7 @@ section {
 }
 
 /* MEDIA QUERY FOR 575PX SCREENS AND SMALLER */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 575px) {
   .hero-form button {
       width: 100%;
   }
